@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Portfolio Pessoal - Nadja Kelly de Oliveira
 
 Projeto desenvolvido para a disciplina de Fundamentos da Programacao Web, utilizando apenas:
@@ -57,3 +58,6 @@ Exemplo de URL:
 - Link do repositorio publico no GitHub.
 - Prints das paginas com a URL visivel no navegador.
 - Codigo-fonte no PDF (apenas se exigido pela plataforma).
+=======
+# Uninter
+>>>>>>> 833c2efff5d7bf640b7463a700e78b9c78f75fbe
