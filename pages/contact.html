@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact page for Nadja Kelly de Oliveira's portfolio.">
+  <title>Contato | Nadja Kelly de Oliveira</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/layout.css">
+  <link rel="stylesheet" href="../css/components.css">
+  <link rel="stylesheet" href="../css/animations.css">
+  <link rel="stylesheet" href="../css/responsive.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="../index.html">Nadja Kelly</a>
+
+    <button id="menu-toggle" class="menu-toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="main-nav">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav id="main-nav" class="nav" aria-label="Navegacao principal">
+      <a href="../index.html">Sobre mim</a>
+      <a href="education.html">Formacao</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a class="active" href="contact.html">Contato</a>
+      <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Alternar tema">Tema</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero reveal">
+      <h1>Contato</h1>
+      <p>Entre em contato por mensagem ou pelos canais diretos abaixo.</p>
+    </section>
+
+    <section class="card reveal">
+      <h2>Canais diretos</h2>
+      <p><strong>E-mail:</strong> nadjakelly2020@gmail.com</p>
+      <p><strong>Telefone:</strong> (84) 98667-0024</p>
+      <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/nadjakelly/" target="_blank" rel="noopener noreferrer">linkedin.com/in/nadjakelly</a></p>
+    </section>
+
+    <section class="card reveal">
+      <h2>Formulario de contato</h2>
+      <form id="contact-form" novalidate>
+        <div class="field">
+          <label for="nome">Nome</label>
+          <input type="text" id="nome" name="nome" placeholder="Seu nome completo">
+          <small class="error" id="erro-nome"></small>
+        </div>
+
+        <div class="field">
+          <label for="email">E-mail</label>
+          <input type="email" id="email" name="email" placeholder="voce@dominio.com">
+          <small class="error" id="erro-email"></small>
+        </div>
+
+        <div class="field">
+          <label for="mensagem">Mensagem</label>
+          <textarea id="mensagem" name="mensagem" rows="5" placeholder="Escreva sua mensagem"></textarea>
+          <small class="error" id="erro-mensagem"></small>
+        </div>
+
+        <button class="submit-btn" type="submit">Enviar mensagem</button>
+      </form>
+
+      <p id="feedback" class="feedback" role="status" aria-live="polite"></p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 Nadja Kelly de Oliveira. Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="../js/script.js"></script>
+</body>
+</html>

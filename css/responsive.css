@@ -1,0 +1,48 @@
+/* Regras de adaptacao para telas menores (menu hamburguer e layout vertical). */
+@media (max-width: 800px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav {
+    position: absolute;
+    top: 60px;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    align-items: stretch;
+    min-width: 200px;
+    padding: 0.65rem;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    background: var(--surface);
+    box-shadow: var(--shadow);
+  }
+
+  .nav.open {
+    display: flex;
+  }
+
+  .nav a,
+  .theme-toggle {
+    width: 100%;
+    text-align: left;
+  }
+
+  .hero {
+    padding: 1.8rem;
+  }
+
+  .hero-content {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .hero-text {
+    text-align: left;
+  }
+
+  .hero-photo {
+    width: min(100%, 260px);
+  }
+}

@@ -1,0 +1,37 @@
+/* Estrutura geral da pagina: cabecalho, area principal e rodape. */
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.9rem 1rem;
+  border-bottom: 1px solid var(--border);
+  background: rgba(238, 174, 170, 0.9);
+  backdrop-filter: blur(8px);
+}
+
+body.dark .site-header {
+  background: rgba(36, 42, 49, 0.88);
+}
+
+.brand {
+  text-decoration: none;
+  color: var(--text);
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+
+main {
+  width: min(960px, 92%);
+  margin: 2rem auto 3rem;
+}
+
+.site-footer {
+  text-align: center;
+  border-top: 1px solid var(--border);
+  padding: 1.25rem 0;
+  color: var(--muted);
+}
